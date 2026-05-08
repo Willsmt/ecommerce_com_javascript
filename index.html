@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <!-- Bloco: header -->
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">
+            <a class="header__link" href="#">Home</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Sobre</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Contato</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#"
+              >Carrinho <span id="cart-count" class="header__badge">0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Bloco principal -->
+    <main class="main">
+      <!-- Bloco: hero -->
+      <section class="hero">
+        <h1 class="hero__title">
+          Seja Bem-Vindo ao nosso E-commerce com JavaScript
+        </h1>
+        <p class="hero__subtitle">Encontre aqui o seu produto</p>
+        <button class="hero__button">Compre Agora</button>
+      </section>
+
+      <!-- Bloco: products -->
+      <section class="products">
+        <h2 class="products__title">Produtos em destaque</h2>
+        <div class="products__grid">
+          <!-- aqui serão inseridos os produtos pelo JS -->
+        </div>
+      </section>
+
+      <!-- Bloco: cart -->
+      <section class="cart">
+        <h2 class="cart__title">Carrinho de compras</h2>
+        <table class="cart__table">
+          <thead class="cart__header">
+            <tr class="cart__row">
+              <th class="cart__col">Produtos</th>
+              <th class="cart__col">Quantidade</th>
+              <th class="cart__col">Preço</th>
+              <th class="cart__col">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody class="cart__body">
+            <!-- itens do carrinho -->
+          </tbody>
+        </table>
+
+        <p class="cart__total">
+          Total: <span id="total" class="cart__value">R$0.00</span>
+        </p>
+        <button id="checkout" class="cart__checkout">Pagar</button>
+      </section>
+    </main>
+
+    <!-- Bloco: footer -->
+    <footer class="footer">&copy; 2026 Ecommerce v2</footer>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+  </body>
+</html>
